@@ -1,0 +1,135 @@
+.booking-confirmed-customer {
+    padding: 100px 0 0 0;
+}
+.booking-confirmed-header h2 {
+    font-family: 'Lemon Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 35px;
+    text-align: center;
+    color: #FF9900;
+    margin: 0;
+    padding: 0 0 14px 0;
+}
+.booking-confirmed-subheader h4{
+	font-family: 'Lemon Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 27px;
+	text-align: center;
+    color: #3F1569;
+	margin:0;
+	padding:0 0 10px 0;
+}
+.booking-customer-countnumber{
+	text-align: center;
+}
+.booking-countnumber {
+    min-width: 73px;
+    background: #F8E0BD;
+    box-shadow: 2px 1px 4px #e5e5e5;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Lemon Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+    padding: 10px 0;
+	position:relative;
+}
+.booking-countnumber-check {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+.booking-confirmed-schedule {
+    font-family: 'Lemon Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    text-align: center;
+    color: #3F1569;
+    margin: 10px 0 5px 0;
+}
+.booking-confirmed-googleaddtext {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #3F1569;
+}
+.booking-confirmed-seelocation {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 100px 0 10px 0;
+}
+.map-location iframe {
+    height: 80px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+}
+.location-address p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lemon Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #3F1569;
+}
+.location-address {
+    padding: 10px 0 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

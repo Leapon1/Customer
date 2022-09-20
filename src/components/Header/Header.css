@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "Lemon Sans Unicase";
+  src: url("./fonts/LemonSansUnicase-Bold.eot");
+  src: local("Lemon Sans Unicase Bold"), local("LemonSansUnicase-Bold"),
+    url("./fonts/LemonSansUnicase-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSansUnicase-Bold.woff2") format("woff2"),
+    url("./fonts/LemonSansUnicase-Bold.woff") format("woff"),
+    url("./fonts/LemonSansUnicase-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-ThinItalic.eot");
+  src: local("Lemon Sans Thin Italic"), local("LemonSans-ThinItalic"),
+    url("./fonts/LemonSans-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-ThinItalic.woff2") format("woff2"),
+    url("./fonts/LemonSans-ThinItalic.woff") format("woff"),
+    url("./fonts/LemonSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lemon Sans SemiLight";
+  src: url("./fonts/LemonSans-SemiLightItalic.eot");
+  src: local("Lemon Sans SemiLight Italic"), local("LemonSans-SemiLightItalic"),
+    url("./fonts/LemonSans-SemiLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LemonSans-SemiLightItalic.woff2") format("woff2"),
+    url("./fonts/LemonSans-SemiLightItalic.woff") format("woff"),
+    url("./fonts/LemonSans-SemiLightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lemon Sans Unicase";
+  src: url("./fonts/LemonSansUnicase-Regular.eot");
+  src: local("Lemon Sans Unicase Regular"), local("LemonSansUnicase-Regular"),
+    url("./fonts/LemonSansUnicase-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LemonSansUnicase-Regular.woff2") format("woff2"),
+    url("./fonts/LemonSansUnicase-Regular.woff") format("woff"),
+    url("./fonts/LemonSansUnicase-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-Medium.eot");
+  src: local("Lemon Sans Medium"), local("LemonSans-Medium"),
+    url("./fonts/LemonSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-Medium.woff2") format("woff2"),
+    url("./fonts/LemonSans-Medium.woff") format("woff"),
+    url("./fonts/LemonSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans Unicase";
+  src: url("./fonts/LemonSansUnicase-Light.eot");
+  src: local("Lemon Sans Unicase Light"), local("LemonSansUnicase-Light"),
+    url("./fonts/LemonSansUnicase-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSansUnicase-Light.woff2") format("woff2"),
+    url("./fonts/LemonSansUnicase-Light.woff") format("woff"),
+    url("./fonts/LemonSansUnicase-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-Light.eot");
+  src: local("Lemon Sans Light"), local("LemonSans-Light"),
+    url("./fonts/LemonSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-Light.woff2") format("woff2"),
+    url("./fonts/LemonSans-Light.woff") format("woff"),
+    url("./fonts/LemonSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-RegularItalic.eot");
+  src: local("Lemon Sans Regular Italic"), local("LemonSans-RegularItalic"),
+    url("./fonts/LemonSans-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LemonSans-RegularItalic.woff2") format("woff2"),
+    url("./fonts/LemonSans-RegularItalic.woff") format("woff"),
+    url("./fonts/LemonSans-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lemon Sans Unicase SemiLight";
+  src: url("./fonts/LemonSansUnicase-SemiLight.eot");
+  src: local("Lemon Sans Unicase SemiLight"),
+    local("LemonSansUnicase-SemiLight"),
+    url("./fonts/LemonSansUnicase-SemiLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LemonSansUnicase-SemiLight.woff2") format("woff2"),
+    url("./fonts/LemonSansUnicase-SemiLight.woff") format("woff"),
+    url("./fonts/LemonSansUnicase-SemiLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans Unicase";
+  src: url("./fonts/LemonSansUnicase-Medium.eot");
+  src: local("Lemon Sans Unicase Medium"), local("LemonSansUnicase-Medium"),
+    url("./fonts/LemonSansUnicase-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./fonts/LemonSansUnicase-Medium.woff2") format("woff2"),
+    url("./fonts/LemonSansUnicase-Medium.woff") format("woff"),
+    url("./fonts/LemonSansUnicase-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-Thin.eot");
+  src: local("Lemon Sans Thin"), local("LemonSans-Thin"),
+    url("./fonts/LemonSans-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-Thin.woff2") format("woff2"),
+    url("./fonts/LemonSans-Thin.woff") format("woff"),
+    url("./fonts/LemonSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-LightItalic.eot");
+  src: local("Lemon Sans Light Italic"), local("LemonSans-LightItalic"),
+    url("./fonts/LemonSans-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-LightItalic.woff2") format("woff2"),
+    url("./fonts/LemonSans-LightItalic.woff") format("woff"),
+    url("./fonts/LemonSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-BoldItalic.eot");
+  src: local("Lemon Sans Bold Italic"), local("LemonSans-BoldItalic"),
+    url("./fonts/LemonSans-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-BoldItalic.woff2") format("woff2"),
+    url("./fonts/LemonSans-BoldItalic.woff") format("woff"),
+    url("./fonts/LemonSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-Bold.eot");
+  src: local("Lemon Sans Bold"), local("LemonSans-Bold"),
+    url("./fonts/LemonSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-Bold.woff2") format("woff2"),
+    url("./fonts/LemonSans-Bold.woff") format("woff"),
+    url("./fonts/LemonSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans Unicase";
+  src: url("./fonts/LemonSansUnicase-Thin.eot");
+  src: local("Lemon Sans Unicase Thin"), local("LemonSansUnicase-Thin"),
+    url("./fonts/LemonSansUnicase-Thin.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSansUnicase-Thin.woff2") format("woff2"),
+    url("./fonts/LemonSansUnicase-Thin.woff") format("woff"),
+    url("./fonts/LemonSansUnicase-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans SemiLight";
+  src: url("./fonts/LemonSans-SemiLight.eot");
+  src: local("Lemon Sans SemiLight"), local("LemonSans-SemiLight"),
+    url("./fonts/LemonSans-SemiLight.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-SemiLight.woff2") format("woff2"),
+    url("./fonts/LemonSans-SemiLight.woff") format("woff"),
+    url("./fonts/LemonSans-SemiLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-Regular.eot");
+  src: local("Lemon Sans Regular"), local("LemonSans-Regular"),
+    url("./fonts/LemonSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-Regular.woff2") format("woff2"),
+    url("./fonts/LemonSans-Regular.woff") format("woff"),
+    url("./fonts/LemonSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lemon Sans";
+  src: url("./fonts/LemonSans-MediumItalic.eot");
+  src: local("Lemon Sans Medium Italic"), local("LemonSans-MediumItalic"),
+    url("./fonts/LemonSans-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/LemonSans-MediumItalic.woff2") format("woff2"),
+    url("./fonts/LemonSans-MediumItalic.woff") format("woff"),
+    url("./fonts/LemonSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Roboto:wght@100;400;500;700&family=Source+Sans+Pro:wght@300;400;700;900&display=swap");
+
+.App {
+  font-family: "Lemon Sans";
+}
+.header-container {
+  max-width: 345px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header-inner-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 0 13px 0;
+}
+.header-leftpart {
+  flex-basis: 23px;
+}
+.header-leftpart img {
+  width: 100%;
+}
+.header-middlepart {
+  font-family: "Lemon Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #3f1569;
+}
+.header-carticon {
+  position: relative;
+  display: inline-block;
+}
+.header-carticon-amount {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  right: 9px;
+  top: 0;
+  width: 11px;
+  height: 11px;
+  background: #ffa31a;
+  display: inline-block;
+  position: absolute;
+  border-radius: 11px;
+}

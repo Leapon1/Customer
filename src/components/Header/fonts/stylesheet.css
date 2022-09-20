@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Lemon Sans Unicase';
+    src: url('LemonSansUnicase-Bold.eot');
+    src: local('Lemon Sans Unicase Bold'), local('LemonSansUnicase-Bold'),
+        url('LemonSansUnicase-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LemonSansUnicase-Bold.woff2') format('woff2'),
+        url('LemonSansUnicase-Bold.woff') format('woff'),
+        url('LemonSansUnicase-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-ThinItalic.eot');
+    src: local('Lemon Sans Thin Italic'), local('LemonSans-ThinItalic'),
+        url('LemonSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-ThinItalic.woff2') format('woff2'),
+        url('LemonSans-ThinItalic.woff') format('woff'),
+        url('LemonSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lemon Sans SemiLight';
+    src: url('LemonSans-SemiLightItalic.eot');
+    src: local('Lemon Sans SemiLight Italic'), local('LemonSans-SemiLightItalic'),
+        url('LemonSans-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-SemiLightItalic.woff2') format('woff2'),
+        url('LemonSans-SemiLightItalic.woff') format('woff'),
+        url('LemonSans-SemiLightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lemon Sans Unicase';
+    src: url('LemonSansUnicase-Regular.eot');
+    src: local('Lemon Sans Unicase Regular'), local('LemonSansUnicase-Regular'),
+        url('LemonSansUnicase-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LemonSansUnicase-Regular.woff2') format('woff2'),
+        url('LemonSansUnicase-Regular.woff') format('woff'),
+        url('LemonSansUnicase-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-Medium.eot');
+    src: local('Lemon Sans Medium'), local('LemonSans-Medium'),
+        url('LemonSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-Medium.woff2') format('woff2'),
+        url('LemonSans-Medium.woff') format('woff'),
+        url('LemonSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans Unicase';
+    src: url('LemonSansUnicase-Light.eot');
+    src: local('Lemon Sans Unicase Light'), local('LemonSansUnicase-Light'),
+        url('LemonSansUnicase-Light.eot?#iefix') format('embedded-opentype'),
+        url('LemonSansUnicase-Light.woff2') format('woff2'),
+        url('LemonSansUnicase-Light.woff') format('woff'),
+        url('LemonSansUnicase-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-Light.eot');
+    src: local('Lemon Sans Light'), local('LemonSans-Light'),
+        url('LemonSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-Light.woff2') format('woff2'),
+        url('LemonSans-Light.woff') format('woff'),
+        url('LemonSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-RegularItalic.eot');
+    src: local('Lemon Sans Regular Italic'), local('LemonSans-RegularItalic'),
+        url('LemonSans-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-RegularItalic.woff2') format('woff2'),
+        url('LemonSans-RegularItalic.woff') format('woff'),
+        url('LemonSans-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lemon Sans Unicase SemiLight';
+    src: url('LemonSansUnicase-SemiLight.eot');
+    src: local('Lemon Sans Unicase SemiLight'), local('LemonSansUnicase-SemiLight'),
+        url('LemonSansUnicase-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('LemonSansUnicase-SemiLight.woff2') format('woff2'),
+        url('LemonSansUnicase-SemiLight.woff') format('woff'),
+        url('LemonSansUnicase-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans Unicase';
+    src: url('LemonSansUnicase-Medium.eot');
+    src: local('Lemon Sans Unicase Medium'), local('LemonSansUnicase-Medium'),
+        url('LemonSansUnicase-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LemonSansUnicase-Medium.woff2') format('woff2'),
+        url('LemonSansUnicase-Medium.woff') format('woff'),
+        url('LemonSansUnicase-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-Thin.eot');
+    src: local('Lemon Sans Thin'), local('LemonSans-Thin'),
+        url('LemonSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-Thin.woff2') format('woff2'),
+        url('LemonSans-Thin.woff') format('woff'),
+        url('LemonSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-LightItalic.eot');
+    src: local('Lemon Sans Light Italic'), local('LemonSans-LightItalic'),
+        url('LemonSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-LightItalic.woff2') format('woff2'),
+        url('LemonSans-LightItalic.woff') format('woff'),
+        url('LemonSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-BoldItalic.eot');
+    src: local('Lemon Sans Bold Italic'), local('LemonSans-BoldItalic'),
+        url('LemonSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-BoldItalic.woff2') format('woff2'),
+        url('LemonSans-BoldItalic.woff') format('woff'),
+        url('LemonSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-Bold.eot');
+    src: local('Lemon Sans Bold'), local('LemonSans-Bold'),
+        url('LemonSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-Bold.woff2') format('woff2'),
+        url('LemonSans-Bold.woff') format('woff'),
+        url('LemonSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans Unicase';
+    src: url('LemonSansUnicase-Thin.eot');
+    src: local('Lemon Sans Unicase Thin'), local('LemonSansUnicase-Thin'),
+        url('LemonSansUnicase-Thin.eot?#iefix') format('embedded-opentype'),
+        url('LemonSansUnicase-Thin.woff2') format('woff2'),
+        url('LemonSansUnicase-Thin.woff') format('woff'),
+        url('LemonSansUnicase-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans SemiLight';
+    src: url('LemonSans-SemiLight.eot');
+    src: local('Lemon Sans SemiLight'), local('LemonSans-SemiLight'),
+        url('LemonSans-SemiLight.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-SemiLight.woff2') format('woff2'),
+        url('LemonSans-SemiLight.woff') format('woff'),
+        url('LemonSans-SemiLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-Regular.eot');
+    src: local('Lemon Sans Regular'), local('LemonSans-Regular'),
+        url('LemonSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-Regular.woff2') format('woff2'),
+        url('LemonSans-Regular.woff') format('woff'),
+        url('LemonSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon Sans';
+    src: url('LemonSans-MediumItalic.eot');
+    src: local('Lemon Sans Medium Italic'), local('LemonSans-MediumItalic'),
+        url('LemonSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('LemonSans-MediumItalic.woff2') format('woff2'),
+        url('LemonSans-MediumItalic.woff') format('woff'),
+        url('LemonSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
