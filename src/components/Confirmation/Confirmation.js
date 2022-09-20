@@ -20,7 +20,6 @@ class Confirmation extends Component {
   };
 
   componentDidMount() {
-    console.log(this.props.history.location.state.state, "com did mount");
     this.setState({
       dateTime: this.props.history.location.state.state.dateTime,
     });

@@ -41,9 +41,7 @@ class Summaryslotselection extends Component {
   }
 
   render() {
-    console.log('prop', this.props)
     const location = this.props.location.state.state.cartVal;
-    console.log(this.props.location, "summary selection / service card");
     const handleCount = (val, item, index) => {
       if (val === "inc") {
         item.amount = item.amount + 1;
@@ -66,7 +64,6 @@ class Summaryslotselection extends Component {
       this.setState({ totalAmount: totalAmount11 });
     };
 
- console.log('props', this.props)
     return (
       <>
         {/* Customer detail Popup Start */}

@@ -118,8 +118,6 @@ class LandingPage extends Component {
                   this.setState({ cartCount: cartVal })
                 }
                 addBtnClick={(index, product) => {
-                  console.log('product', product);
-                  
                   this.setState({
                     addedProductIndex: index,
                     product: product
@@ -140,7 +138,6 @@ class LandingPage extends Component {
               <button
                 className="select-date-btn"
                 onClick={() =>{
-                  console.log('this.state.products', this.state.products);
                   
                   this.props.history.push("/summaryslotselection", {
                     state: {

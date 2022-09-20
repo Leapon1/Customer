@@ -6,7 +6,6 @@ import { useHistory } from "react-router-dom";
 import close from "../../assets/icons/close.png";
 
 const CustomerDetailPopup = (props) => {
-  console.log(props, "customer detail popup summary selection");
   const history = useHistory();
   const [customerDetail, setCustomerDetail] = useState({
     name: "",
@@ -54,20 +53,6 @@ const CustomerDetailPopup = (props) => {
               isLoading: false,
             });
 
-            // console.log(props.SelectedServices, "selected services console");
-
-            // for (let i = 0; i < props.SelectedServices.length - 1; i++) {
-            //   console.log(props.SelectedServices[i], "ss");
-            // }
-
-            // const payLoad3 = {
-            //   props.SelectedServices.map((item) => {
-            //     serviceId: item.ServiceId;
-            //     qty: item.amount;
-            //   }),
-            //   appointmentId: response.data.ApptId,
-            // };
-
             props?.SelectedServices.map((item) => {
               const payLoad3 = {
                 serviceId: item.ServiceId,
@@ -78,7 +63,6 @@ const CustomerDetailPopup = (props) => {
               const AppointmentServiceList =
                 "https://leaponapi.herokuapp.com/api/AppointmentService/";
               axios.post(AppointmentServiceList, payLoad3).then((response) => {
-                console.log(response, "third response");
               });
             });
 
@@ -139,10 +123,6 @@ const CustomerDetailPopup = (props) => {
                     value={customerDetail.email}
                   />
                 </div>
-                {console.log(
-                  customerDetail.appointmentId,
-                  "customer detail appointment"
-                )}
                 <div className="popup-customerdetail-row">
                   <label>
                     Contact Number <span>*</span>
