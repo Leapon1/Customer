@@ -1,16 +1,4 @@
 import React, { Component } from "react";
-
-import {
-  BrowserRouter as BrowserRouter,
-  Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-} from "react-router-dom";
-import axios from "axios";
-import Button from "react-bootstrap/Button";
-
 import "./Summaryslotselection.css";
 // import searchicon from "./images/searchicon.png";
 // import calendarsample from "./images/calendarsample.png";
@@ -20,8 +8,6 @@ import DateTimePicker from "../DayTimePicker/DayTimePicker";
 import * as moment from "moment";
 import CustomerDetailPopup from "../CustomerDetailPopup/CustomerDetailPopup";
 
-const grandTotal = [];
-let newArray = [];
 let globalArray = [];
 let totalAmount11 = 0;
 class Summaryslotselection extends Component {
@@ -157,11 +143,11 @@ class Summaryslotselection extends Component {
             />
           </div>
           <div className="company-calendar-resultoutput">
-            {moment(this.state.dateTime).format("MMMM DD") != "Invalid date"
+            {moment(this.state.dateTime).format("MMMM DD") !== "Invalid date"
               ? moment(this.state.dateTime).format("MMMM DD")
               : "Date"}{" "}
             |{" "}
-            {moment(this.state.dateTime).format("LT") != "Invalid date"
+            {moment(this.state.dateTime).format("LT") !== "Invalid date"
               ? moment(this.state.dateTime).format("LT")
               : "Time"}
           </div>

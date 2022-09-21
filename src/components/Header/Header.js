@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 
 import companylogo from "./images/companylogo.png";
-import mobilebar from "./images/mobilebar.png";
+// import mobilebar from "./images/mobilebar.png";
 import carticon from "./images/carticon.png";
 
 class MyHeader extends Component {

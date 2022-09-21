@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { render } from "react-dom";
 import DayTimePicker from "@mooncake-dev/react-day-time-picker";
-import { DatePicker } from "@mui/x-date-pickers";
 const DateTimePicker = (props) => {
   const [date, setDate] = useState();
 
