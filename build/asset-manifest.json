@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.820dff57.css",
-    "main.js": "/static/js/main.ac336224.js",
+    "main.js": "/static/js/main.d8b8b427.js",
     "static/js/787.4c220f9e.chunk.js": "/static/js/787.4c220f9e.chunk.js",
     "static/media/LemonSans-RegularItalic.eot": "/static/media/LemonSans-RegularItalic.4bbd8f05fc2c3925cf3c.eot",
     "static/media/LemonSans-SemiLightItalic.eot": "/static/media/LemonSans-SemiLightItalic.0bac20c76036256072e3.eot",
@@ -45,33 +45,21 @@
     "static/media/LemonSans-RegularItalic.woff": "/static/media/LemonSans-RegularItalic.8209c61b125e012f96fe.woff",
     "static/media/LemonSans-ThinItalic.woff": "/static/media/LemonSans-ThinItalic.a5eea4977d41d677b4c3.woff",
     "static/media/LemonSans-BoldItalic.woff": "/static/media/LemonSans-BoldItalic.4e817ad1c33aa4429536.woff",
-    "static/media/imagestudent.png": "/static/media/imagestudent.b5986916edfefa994385.png",
     "static/media/LemonSans-Light.woff": "/static/media/LemonSans-Light.316270b1c9364a0d8b34.woff",
-    "static/media/imagecolor.png": "/static/media/imagecolor.62885cac6fdf6e40a5fb.png",
     "static/media/LemonSans-SemiLight.woff": "/static/media/LemonSans-SemiLight.a13aa3a7abe69b184575.woff",
     "static/media/LemonSans-Medium.woff": "/static/media/LemonSans-Medium.d037c1114a59290a703c.woff",
     "static/media/LemonSans-Regular.woff": "/static/media/LemonSans-Regular.f3761ac3824206c610e6.woff",
     "static/media/LemonSans-Thin.woff": "/static/media/LemonSans-Thin.149749d13b3fa971ae39.woff",
-    "static/media/imagesenior.png": "/static/media/imagesenior.0faca4916e0ac3f1cee6.png",
-    "static/media/imagefacial.png": "/static/media/imagefacial.56bc5a3e3a23a7d16f1e.png",
     "static/media/LemonSans-Bold.woff": "/static/media/LemonSans-Bold.42cdb6f3af7b88ea493e.woff",
-    "static/media/imageshave.png": "/static/media/imageshave.bc987053fd07e41f9f1f.png",
-    "static/media/imagekids.png": "/static/media/imagekids.e506909d92feb89521fa.png",
-    "static/media/imageeyebrowwax.png": "/static/media/imageeyebrowwax.827b309be5a81617c6d6.png",
-    "static/media/imageregular.png": "/static/media/imageregular.4e65deb5e9df4206080e.png",
-    "static/media/imageprem.png": "/static/media/imageprem.f4e43752d9f908c71d27.png",
     "static/media/LemonSansUnicase-Light.woff": "/static/media/LemonSansUnicase-Light.fceb2fa9eb74955c9912.woff",
     "static/media/LemonSansUnicase-SemiLight.woff": "/static/media/LemonSansUnicase-SemiLight.1999c096d4697ed4308a.woff",
-    "static/media/imagetrim.png": "/static/media/imagetrim.57f2de41f1d95f97740b.png",
     "static/media/LemonSansUnicase-Medium.woff": "/static/media/LemonSansUnicase-Medium.02c07d3694f580b6b678.woff",
     "static/media/LemonSansUnicase-Bold.woff": "/static/media/LemonSansUnicase-Bold.24401047d3e5ce0e7657.woff",
     "static/media/LemonSansUnicase-Regular.woff": "/static/media/LemonSansUnicase-Regular.16d923d3e93f2963a87b.woff",
     "static/media/LemonSansUnicase-Thin.woff": "/static/media/LemonSansUnicase-Thin.910bc6825b5360f1647c.woff",
-    "static/media/imagethreading.png": "/static/media/imagethreading.11a8b6788a67e97c6c1b.png",
     "static/media/LemonSans-SemiLightItalic.woff2": "/static/media/LemonSans-SemiLightItalic.d4d8450fbc2496dc4b77.woff2",
     "static/media/LemonSans-MediumItalic.woff2": "/static/media/LemonSans-MediumItalic.c4cf33050f06023eb482.woff2",
     "static/media/LemonSans-LightItalic.woff2": "/static/media/LemonSans-LightItalic.2d74796d0a043f504ba7.woff2",
-    "static/media/imagebuzzcut.png": "/static/media/imagebuzzcut.c29fa78cdf5b1a4a3136.png",
     "static/media/LemonSans-ThinItalic.woff2": "/static/media/LemonSans-ThinItalic.56ef68527a2385de63bd.woff2",
     "static/media/LemonSans-RegularItalic.woff2": "/static/media/LemonSans-RegularItalic.491e43f5f957a41b844f.woff2",
     "static/media/LemonSans-BoldItalic.woff2": "/static/media/LemonSans-BoldItalic.c5c15436a23d0bf91575.woff2",
@@ -90,11 +78,11 @@
     "static/media/LemonSansUnicase-Thin.woff2": "/static/media/LemonSansUnicase-Thin.c5d0b91130dbef009eac.woff2",
     "index.html": "/index.html",
     "main.820dff57.css.map": "/static/css/main.820dff57.css.map",
-    "main.ac336224.js.map": "/static/js/main.ac336224.js.map",
+    "main.d8b8b427.js.map": "/static/js/main.d8b8b427.js.map",
     "787.4c220f9e.chunk.js.map": "/static/js/787.4c220f9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.820dff57.css",
-    "static/js/main.ac336224.js"
+    "static/js/main.d8b8b427.js"
   ]
 }
