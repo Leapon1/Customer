@@ -1,17 +1,11 @@
 import React, { Component } from "react";
 import * as moment from "moment";
 
-import {
-  BrowserRouter as BrowserRouter,
-  Router,
-  Switch,
-  Route,
-  Link,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./Confirmation.css";
 
-import searchicon from "./images/searchicon.png";
+// import searchicon from "./images/searchicon.png";
 import countnumbercheck from "./images/countnumbercheck.png";
 
 class Confirmation extends Component {
@@ -54,14 +48,10 @@ class Confirmation extends Component {
           <div className="booking-confirmed-schedule">
             <span>{moment(this.state.dateTime).format("LT")}</span>
           </div>
-
-          <div className="booking-confirmed-googleaddtext">
-            <span>Add to my google calendar</span>
-          </div>
-
+{/* 
           <div className="booking-confirmed-seelocation">
             <span>Click to see the location </span>
-          </div>
+          </div> */}
 
           <div className="map-location">
             <iframe

@@ -1,5 +1,4 @@
 .booking-confirmed-customer {
-    padding: 100px 0 0 0;
 }
 .booking-confirmed-header h2 {
     font-family: 'Lemon Sans';
@@ -78,10 +77,11 @@
     padding: 100px 0 10px 0;
 }
 .map-location iframe {
-    height: 80px;
+    height: 140px;
     border: none;
     width: 100%;
     border-radius: 10px;
+    margin-top: 30px;
 }
 .location-address p {
     margin: 0;

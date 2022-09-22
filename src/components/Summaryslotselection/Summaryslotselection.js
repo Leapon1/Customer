@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Summaryslotselection.css";
+import { Link } from "react-router-dom";
 // import searchicon from "./images/searchicon.png";
 // import calendarsample from "./images/calendarsample.png";
 import MyHeader from "../Header/Header";
@@ -26,6 +27,7 @@ class Summaryslotselection extends Component {
     this.setState({ services: this.props.location.state.state.product });
   }
 
+
   render() {
     const location = this.props.location.state.state.cartVal;
     const handleCount = (val, item, index) => {
@@ -39,7 +41,6 @@ class Summaryslotselection extends Component {
       }
       excessItem(item, val);
     };
-
     const excessItem = (item, val) => {
       if (val === "inc") {
         this.state.totalAmount += item.price;
@@ -49,7 +50,6 @@ class Summaryslotselection extends Component {
       totalAmount11 = this.state.totalAmount;
       this.setState({ totalAmount: totalAmount11 });
     };
-
     return (
       <>
         {/* Customer detail Popup Start */}
@@ -69,7 +69,7 @@ class Summaryslotselection extends Component {
         <MyHeader count={location} />
         <div className="summaryslotselection-container">
           <div className="page-header-back">
-            <span>&#60;</span>
+            <a className="backbtn" href="/"><span>&#60;</span></a>
             Summary
           </div>
 
@@ -142,21 +142,27 @@ class Summaryslotselection extends Component {
               dateTime={(value) => this.setState({ dateTime: value })}
             />
           </div>
-          <div className="company-calendar-resultoutput">
-            {moment(this.state.dateTime).format("MMMM DD") !== "Invalid date"
-              ? moment(this.state.dateTime).format("MMMM DD")
-              : "Date"}{" "}
-            |{" "}
-            {moment(this.state.dateTime).format("LT") !== "Invalid date"
-              ? moment(this.state.dateTime).format("LT")
-              : "Time"}
-          </div>
-          <div className="bookappointment-link">
-            <div
-              className="bookappointment-btn"
-              onClick={() => this.setState({ toggle: true })}
-            >
-              Book Appointment
+          <div className={"bottom-fixed-container "+(this.state.toggle ? "bkhide" : "")}>
+            <div className="calender-con">
+              <div className="company-calendar-resultoutput">
+                {moment(this.state.dateTime).format("MMMM DD") != "Invalid date"
+                  ? moment(this.state.dateTime).format("MMMM DD")
+                  : "Date"}{" "}
+                |{" "}
+                {moment(this.state.dateTime).format("LT") != "Invalid date"
+                  ? moment(this.state.dateTime).format("LT")
+                  : "Time"}
+              </div>
+            </div>
+            <div className="bookappointment-con">
+              <div className="bookappointment-link">
+                  <div
+                    className="bookappointment-btn "
+                    onClick={() => this.setState({ toggle: true })}
+                  >
+                    Book Appointment
+                  </div>
+              </div>
             </div>
           </div>
         </div>

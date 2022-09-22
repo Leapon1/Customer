@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 import close from "../../assets/icons/close.png";
 
 const CustomerDetailPopup = (props) => {
+  const [inputClick, setInputClick] = useState(false)
   const history = useHistory();
   const [customerDetail, setCustomerDetail] = useState({
     name: "",
@@ -74,7 +75,13 @@ const CustomerDetailPopup = (props) => {
                   customerName: customerDetail.name,
                 },
               });
-              swal("Success!", "Your details have Been submitted", "success");
+              swal({
+                title : "Success!",
+                text: "Your details have Been submitted",
+                icon: "success",
+                timer: 1500,
+                buttons: false
+              });
             }
           });
         }
@@ -82,18 +89,26 @@ const CustomerDetailPopup = (props) => {
     } else {
       setCustomerDetail({ isLoading: false });
       props.CustomerInfo(false);
-      swal("Warning!", "Please fill out all the required fields", "warning");
+      swal({
+        title : "Warning!",
+        text: "Please fill out all the required fields",
+        icon: "warning",
+        timer: 1500,
+        buttons: false
+      });
     }
   };
-
   return (
     <div>
       {/* dialog customer detail popup */}
 
       <div className="popup-fullcontent">
-        <div className="popup-content">
+        <div className="popup-inner">
+        <div className={"popup-content "+(inputClick ? "popupTop" : "") }>
           <div className="popup-close-icon">
-            <div onClick={() => props.CustomerInfo(false)}>
+            <div onClick={() => {
+                props.CustomerInfo(false)
+               setInputClick(false)}}>
               <img src={close} style={{ width: "12px" }} alt="close icon" />
             </div>
           </div>
@@ -111,6 +126,7 @@ const CustomerDetailPopup = (props) => {
                     name="name"
                     type="text"
                     onChange={changeHandler}
+                    onClick={() => setInputClick(true)}
                     value={customerDetail.name}
                   />
                 </div>
@@ -120,6 +136,7 @@ const CustomerDetailPopup = (props) => {
                     name="email"
                     type="email"
                     onChange={changeHandler}
+                    onClick={() => setInputClick(true)}
                     value={customerDetail.email}
                   />
                 </div>
@@ -131,6 +148,7 @@ const CustomerDetailPopup = (props) => {
                     name="contactNo"
                     type="tel"
                     onChange={changeHandler}
+                    onClick={() => setInputClick(true)}
                     value={customerDetail.contactNo}
                   />
                 </div>
@@ -151,7 +169,10 @@ const CustomerDetailPopup = (props) => {
                     <CircularProgress style={{ color: "#FF9900" }} />
                   ) : (
                     <button
-                      onClick={clickHandler}
+                      onClick={ () => {
+                        clickHandler()
+                        setInputClick(false)
+                      }}
                       className="popup-confirm-btn"
                     >
                       Confirm
@@ -160,6 +181,7 @@ const CustomerDetailPopup = (props) => {
                 </div>
               </form>
             </div>
+          </div>
           </div>
         </div>
       </div>

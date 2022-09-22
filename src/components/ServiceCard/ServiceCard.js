@@ -34,6 +34,8 @@ const ServiceCard = (props) => {
     isExist(index);
   };
 
+  let prodData = [props.product]
+
   return (
     <div>
       <div className="company-service-item" key={props.product.ServiceId}>
@@ -85,8 +87,8 @@ const ServiceCard = (props) => {
               onClick={() =>
                 history.push("/summaryslotselection/", {
                   state: {
-                    cartVal: selectedItem.length,
-                    product: selectedItem,
+                    cartVal: selectedItem.length == 0 ? 1 : selectedItem.length,
+                    product: selectedItem.length == 0 ? prodData : selectedItem,
                   },
                 })
               } 

@@ -1,3 +1,6 @@
+body{
+  background-color: #fbf8f3;
+}
 .App {
   text-align: center;
   background: #fbf8f3;
@@ -324,7 +327,6 @@
   font-size: 14px;
 }
 .company-date-heading {
-  padding: 30px 0;
   text-align: left;
 }
 .company-date-heading h4 {
@@ -371,6 +373,9 @@
   background-color: #fceacf !important;
 }
 
+.company-calendar-section  {
+  margin-bottom: 160px;
+}
 .company-calendar-section > div > div {
   width: 20rem;
   text-align: left;
@@ -382,7 +387,7 @@
   justify-content: space-between;
   border-top: 1px solid #c4c4c4;
   border-bottom: 1px solid #c4c4c4;
-  margin: 25px 0;
+  margin: 10px 0;
   padding: 10px 0;
   font-family: "Lemon Sans";
   font-style: normal;
@@ -392,6 +397,7 @@
   color: #000000;
   text-align: center;
   z-index: -1;
+  min-width: 345px;
 }
 /*end:calendar*/
 
@@ -466,10 +472,26 @@
   color: #000000;
   text-decoration: none;
 }
-
+.bottom-fixed-container{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fbf8f3;
+  box-shadow: 0px -3px 10px -5px #3f1569;
+  z-index: 100;
+}
+.calender-con{
+  display: flex;
+  justify-content: center;
+}
+.bookappointment-con{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
 .bookappointment-link {
   text-align: center;
-  padding: 15px 0 60px 0;
 }
 .bookappointment-btn {
   font-family: "Lemon Sans";
@@ -487,6 +509,7 @@
   cursor: pointer;
   transition: all 0.5s ease 0s;
   text-decoration: none;
+  min-width: 260px;
 }
 .bookappointment-btn:hover {
   color: #fff;
@@ -497,14 +520,16 @@
 .select-date-con{
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
 }
 .select-date-con .wrapper{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   box-shadow: 0px -3px 10px -5px #3f1569;
   align-items: center;
   min-width: 345px;
-  border-radius: 10px;
+  gap: 35px;
 }
 .select-date-price{
   margin-left: 10px;
@@ -537,11 +562,13 @@
 /*start:popup*/
 .popup-fullcontent {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   top: 0;
-  background: rgba(0, 0, 0, 0.75);
   left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
   z-index: 5;
 }
 .popup-close-icon {
@@ -549,19 +576,27 @@
   top: 20px;
   right: 20px;
 }
-
+.popup-inner{
+  display: flex;
+  justify-content: center;
+}
+.bkhide{
+  display: none;
+}
 .popup-close-icon:hover {
   cursor: pointer;
 }
+.popupTop{
+  top: 2% !important;
+}
 
 .popup-content {
+  transition: 0.4s;
   position: absolute;
-  left: 50%;
-  top: 25%;
+  top: 15%;
   background: #fbf8f3;
   border-radius: 10px;
-  transform: translateX(-50%);
-  padding: 40px;
+  padding: 30px;
 }
 .popup-header {
   padding: 0 0 20px 0;
@@ -1004,8 +1039,4 @@
   font-size: 18px;
   line-height: 21px;
   color: #3f1569;
-}
-.increbtn{
-  cursor: pointer;
-  font-size: 20px;
 }
