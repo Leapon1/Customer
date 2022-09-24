@@ -530,6 +530,7 @@ body{
   align-items: center;
   min-width: 345px;
   gap: 35px;
+  background: #fbf8f3;
 }
 .select-date-price{
   margin-left: 10px;
