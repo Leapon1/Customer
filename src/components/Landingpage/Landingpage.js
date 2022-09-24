@@ -2,18 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./Landingpage.css";
 import searchicon from "./images/searchicon.png";
-// import imageregular from "./images/imageregular.png";
-// import imagestudent from "./images/imagestudent.png";
-// import imagesenior from "./images/imagesenior.png";
-// import imagekids from "./images/imagekids.png";
-// import imagebuzzcut from "./images/imagebuzzcut.png";
-// import imageprem from "./images/imageprem.png";
-// import imagecolor from "./images/imagecolor.png";
-// import imagefacial from "./images/imagefacial.png";
-// import imageeyebrowwax from "./images/imageeyebrowwax.png";
-// import imagethreading from "./images/imagethreading.png";
-// import imageshave from "./images/imageshave.png";
-// import imagetrim from "./images/imagetrim.png";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import MyHeader from "../Header/Header";
 

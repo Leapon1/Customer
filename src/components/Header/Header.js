@@ -4,13 +4,9 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 import companylogo from "./images/companylogo.png";
-// import mobilebar from "./images/mobilebar.png";
 import carticon from "./images/carticon.png";
 
 class MyHeader extends Component {
-    // constructor(props) {
-    //   super(props);
-    // }
   render() {
     return (
       <header className="header-container">

@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import "./Summaryslotselection.css";
-import { Link } from "react-router-dom";
-// import searchicon from "./images/searchicon.png";
-// import calendarsample from "./images/calendarsample.png";
 import MyHeader from "../Header/Header";
-// import PickDate from "../PickDate/PickDate";
 import DateTimePicker from "../DayTimePicker/DayTimePicker";
 import * as moment from "moment";
 import CustomerDetailPopup from "../CustomerDetailPopup/CustomerDetailPopup";
