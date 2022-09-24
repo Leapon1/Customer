@@ -62,8 +62,6 @@ class Summaryslotselection extends Component {
             TotalAmount={this.state.totalAmount}
           />
         )}
-        
-
         {/* Customer detail Popup End */}
 
         <MyHeader count={location} />
