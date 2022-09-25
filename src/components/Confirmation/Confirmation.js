@@ -23,8 +23,8 @@ class Confirmation extends Component {
     return (
       <div className="confirmation-container">
         <div className="page-header-back page-back-link">
-          <span>&#60;</span>
-          <Link to="/">Home </Link>
+          
+          <a href="/"><span>&#60;</span> Home </a>
         </div>
         <div className="booking-confirmed-customer">
           <div className="booking-confirmed-header">

@@ -57,7 +57,7 @@ class LandingPage extends Component {
         <MyHeader count={this.state.cartCount} />
         <div className="landingpage-container">
           <div className="seach-box">
-            <div className="seach-form-content">
+            {/* <div className="seach-form-content">
               <form>
                 <span className="searchicon">
                   <img src={searchicon} alt="searchicon" />
@@ -68,7 +68,7 @@ class LandingPage extends Component {
                   placeholder="Search for a service"
                 />
               </form>
-            </div>
+            </div> */}
 
             <div className="seach-filter">
               <button>Hair</button>

@@ -20,8 +20,13 @@ const CustomerDetailPopup = (props) => {
   });
 
   const changeHandler = (e) => {
-    const { name, value } = e.target;
-    setCustomerDetail({ ...customerDetail, [name]: value });
+    let name = e.target.name;
+    let value = e.target.value;
+
+    customerDetail[name] = value;
+    setCustomerDetail({
+        ...customerDetail,
+    });
   };
 
   const clickHandler = () => {
@@ -170,8 +175,8 @@ const CustomerDetailPopup = (props) => {
                   ) : (
                     <button
                       onClick={ () => {
-                        clickHandler()
-                        setInputClick(false)
+                        clickHandler();
+                        setInputClick(false);
                       }}
                       className="popup-confirm-btn"
                     >

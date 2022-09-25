@@ -52,13 +52,13 @@ const ServiceCard = (props) => {
           <div className="company-service-item-bottom">
             {isExist(props.index) ? (
               <div className="incrementdecrement-box">
-                <div
-                  className="increment-count increment-count_1"
+                 <div
+                  className="decrement-count decrement-count_1"
                   onClick={() => {
-                    handleCount("inc", isExist(props.index));
+                    handleCount("dec", isExist(props.index));
                   }}
                 >
-                  <span className="increbtn">+</span>
+                  <span className="increbtn">-</span>
                 </div>
 
                 <div className="total-count total-count-1">
@@ -66,12 +66,12 @@ const ServiceCard = (props) => {
                 </div>
 
                 <div
-                  className="decrement-count decrement-count_1"
+                  className="increment-count increment-count_1"
                   onClick={() => {
-                    handleCount("dec", isExist(props.index));
+                    handleCount("inc", isExist(props.index));
                   }}
                 >
-                  <span className="increbtn">-</span>
+                  <span className="increbtn">+</span>
                 </div>
               </div>
             ) : (

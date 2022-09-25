@@ -18,15 +18,18 @@ class MyHeader extends Component {
           </div>
           <div className="header-middlepart">DUKE</div>
           <div className="header-rightpart">
-            <span className="header-carticon">
-              <span
+            <Link to='/' className="header-carticon">
+              { this.props.count ? <span
                 className="header-carticon-amount"
                 style={{ color: "#fff" }}
               >
                 {this.props.count}
-              </span>
-              <img src={carticon} alt="carticon" />
-            </span>
+              </span> : <div></div>
+
+              }
+              
+              <img className="carticon" src={carticon} alt="carticon" />
+            </Link>
           </div>
         </div>
       </header>

@@ -82,23 +82,24 @@ class Summaryslotselection extends Component {
                     <div className="company-summary-item-rightpart">
                       {/*start:increment decrement*/}
                       <div className="incrementdecrement-box">
+                      <div
+                          className="decrement-count decrement-count_1"
+                          onClick={() => handleCount("dec", item, index)}
+                        >
+                          <span className="increbtn">-</span>
+                        </div>
+                        
+
+                        <div className="total-count total-count-1">
+                          {item.amount}
+                        </div>
                         <div
                           className="increment-count increment-count_1"
                           onClick={() => handleCount("inc", item, index)}
                         >
                           <span className="increbtn">+</span>
                         </div>
-
-                        <div className="total-count total-count-1">
-                          {item.amount}
-                        </div>
-
-                        <div
-                          className="decrement-count decrement-count_1"
-                          onClick={() => handleCount("dec", item, index)}
-                        >
-                          <span className="increbtn">-</span>
-                        </div>
+                        
                       </div>
                       {/*end:increment decrement*/}
 

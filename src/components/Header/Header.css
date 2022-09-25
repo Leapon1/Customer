@@ -233,12 +233,13 @@
   display: flex;
   justify-content: space-between;
   padding: 13px 0 13px 0;
+  align-items: center;
 }
 .header-leftpart {
   flex-basis: 23px;
 }
 .header-leftpart img {
-  width: 100%;
+  width: 26px;
 }
 .header-middlepart {
   font-family: "Lemon Sans";
@@ -257,13 +258,17 @@
   display: flex !important;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
-  right: 9px;
-  top: 0;
-  width: 11px;
-  height: 11px;
+  font-size: 14px;
+  right: 8px;
+  top: -3px;
+  width: 14px;
+  height: 14px;
   background: #ffa31a;
   display: inline-block;
   position: absolute;
   border-radius: 11px;
+}
+.carticon{
+  width: 31px;
+  height: auto;
 }
