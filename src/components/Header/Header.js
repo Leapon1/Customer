@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link, useHistory } from "react-router-dom";
 
 import "./Header.css";
 
 import companylogo from "./images/companylogo.png";
 import carticon from "./images/carticon.png";
 
-class MyHeader extends Component {
-  render() {
-    return (
-      <header className="header-container">
+function Header(props) {
+  const history = useHistory();
+  return (
+    <header className="header-container">
         <div className="header-inner-section">
           <div className="header-leftpart">
             <Link to="/">
@@ -18,23 +18,29 @@ class MyHeader extends Component {
           </div>
           <div className="header-middlepart">DUKE</div>
           <div className="header-rightpart">
-            <Link to='/' className="header-carticon">
-              { this.props.count ? <span
+            <Link  onClick={() =>
+                history.push("/summaryslotselection/", {
+                  state: {
+                    cartVal: props.product.length,
+                    product: props.product
+                  },
+                })
+              } className="header-carticon">
+              {props.count ? <span
                 className="header-carticon-amount"
                 style={{ color: "#fff" }}
               >
-                {this.props.count}
+                {props.count}
               </span> : <div></div>
-
               }
-              
               <img className="carticon" src={carticon} alt="carticon" />
             </Link>
           </div>
         </div>
       </header>
-    );
-  }
+  )
 }
 
-export default MyHeader;
+export default Header;
+
+

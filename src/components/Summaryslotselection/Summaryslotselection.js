@@ -137,7 +137,9 @@ class Summaryslotselection extends Component {
               dateTime={(value) => this.setState({ dateTime: value })}
             />
           </div>
-          <div className={"bottom-fixed-container "+(this.state.toggle ? "bkhide" : "")}>
+          {
+            this.state.dateTime ? 
+            <div className={"bottom-fixed-container "+(this.state.toggle ? "bkhide" : "")}>
             <div className="calender-con">
               <div className="company-calendar-resultoutput">
                 {moment(this.state.dateTime).format("MMMM DD") != "Invalid date"
@@ -159,7 +161,9 @@ class Summaryslotselection extends Component {
                   </div>
               </div>
             </div>
-          </div>
+          </div> : <div></div>
+          }
+          
         </div>
       </>
     );

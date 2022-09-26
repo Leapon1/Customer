@@ -17,13 +17,27 @@ class LandingPage extends Component {
     total: 0,
     addedProductIndex: [],
     product: [],
-    
+    categoryId: [],
+    categoryData: [],
   };
   componentDidMount() {
     const url = "https://leaponapi.herokuapp.com/api/Service/";
     axios.get(url).then((result) => {
       const products = result.data;
       this.setState({ products });
+    });
+  }
+
+  getDatabyCategory(categoryId = false) {
+    let catId = categoryId ? categoryId : this.state.categoryId;
+    let resultId = []
+    const url = "https://leaponapi.herokuapp.com/api/Service/";
+    axios.get(url).then((res) => {
+      let cats = res.data.filter((item) => {
+        return item.category === catId
+      })
+      this.setState({ products : "" });
+      this.setState({ products : cats });
     });
   }
 
@@ -54,7 +68,7 @@ class LandingPage extends Component {
 
     return (
       <>
-        <MyHeader count={this.state.cartCount} />
+        <MyHeader count={this.state.cartCount} product={this.state.product}/>
         <div className="landingpage-container">
           <div className="seach-box">
             {/* <div className="seach-form-content">
@@ -71,9 +85,18 @@ class LandingPage extends Component {
             </div> */}
 
             <div className="seach-filter">
-              <button>Hair</button>
-              <button>Beard</button>
-              <button>Face</button>
+              <button onClick={() => {
+                this.setState({ categoryId: 1})
+                this.getDatabyCategory(1)
+              } }>Hair</button>
+              <button onClick={() => {
+                this.setState({ categoryId: 3})
+                this.getDatabyCategory(2)
+              } }>Beard</button>
+              <button onClick={() => {
+                this.setState({ categoryId: 3})
+                this.getDatabyCategory(3)
+              } }>Face</button>
             </div>
           </div>
           <div className="company-offer">

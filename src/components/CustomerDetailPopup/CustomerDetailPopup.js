@@ -7,6 +7,12 @@ import close from "../../assets/icons/close.png";
 
 const CustomerDetailPopup = (props) => {
   const [inputClick, setInputClick] = useState(false)
+  const [inputError, setInputError] = useState({
+    email: "",
+    isWhatsapp: "",
+    name: "",
+    phone: "",
+  })
   const history = useHistory();
   const [customerDetail, setCustomerDetail] = useState({
     name: "",
@@ -90,7 +96,18 @@ const CustomerDetailPopup = (props) => {
             }
           });
         }
-      });
+      })
+      .catch((err) => {
+        return (
+          setInputError({
+            email: err.response.data.email,
+            isWhatsapp: err.response.data.isWhatsapp,
+            name: err.response.data.name,
+            phone: err.response.data.phone,
+          }),
+          console.log('err', err.response.data)
+        )
+      })
     } else {
       setCustomerDetail({ isLoading: false });
       props.CustomerInfo(false);
@@ -161,14 +178,20 @@ const CustomerDetailPopup = (props) => {
                 <div className="popup-customerdetail-checkbox">
                   <input
                     type="checkbox"
-                    ID="whatsapp"
+                    id="whatsapp"
                     name="isChecked"
                     onChange={changeHandler}
                     defaultChecked={customerDetail.isChecked}
                     value={customerDetail.isChecked}
                   />
-                  <label for="whatsapp">Is this your whatsapp number?</label>
+                  <label htmlFor="whatsapp">Is this your whatsapp number?</label>
                 </div>
+                <div>
+                  <span className="popupError">{inputError.name}</span>
+                  <span className="popupError">{inputError.email}</span>
+                  <span className="popupError">{inputError.phone}</span>
+                  <span className="popupError">{inputError.isWhatsapp}</span>
+                  </div>
                 <div className="popup-customerdetail-row">
                   {customerDetail.isLoading ? (
                     <CircularProgress style={{ color: "#FF9900" }} />

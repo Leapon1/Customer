@@ -284,6 +284,9 @@ body{
 .company-summary-item-rightpart {
   text-align: right;
 }
+.company-summaryitem-rightbottom{
+  margin-right: 10px;
+}
 .company-summary-item-rightpart .increment-decrement-box {
   margin-right: 0;
   width: 60px;
@@ -492,6 +495,12 @@ body{
 .bookappointment-link {
   text-align: center;
 }
+@media (max-width: 450px){
+  .hqlASh {
+    width: auto !important;
+}
+}
+
 .bookappointment-btn {
   font-family: "Lemon Sans";
   font-style: normal;
@@ -502,8 +511,8 @@ body{
   color: #fbf8f3;
   border: none;
   background: #3f1569;
-  border-radius: 15px;
-  padding: 18px 26px;
+  border-radius: 5px;
+  padding: 15px 20px;
   line-height: 17px;
   cursor: pointer;
   transition: all 0.5s ease 0s;
@@ -532,7 +541,6 @@ body{
   background: #fbf8f3;
 }
 .select-date-price{
-  margin-left: 10px;
 }
 .select-date-btn {
   font-family: "Lemon Sans";
@@ -544,7 +552,7 @@ body{
   color: #fbf8f3;
   border: none;
   background: #3f1569;
-  border-radius: 15px;
+  border-radius: 5px;
   width: 214px;
   height: 47px;
   line-height: 17px;
@@ -644,11 +652,14 @@ body{
   margin: 20px 0 0 0;
 }
 .popup-customerdetail-checkbox {
-  padding: 10px 0 20px 0;
+  padding: 10px 0 10px 0;
   text-align: left;
 }
 .popup-customerdetail-checkbox label {
   padding: 0 0 0 5px;
+}
+.popup-customerdetail-row{
+  margin-top: 10px;
 }
 .popup-confirm-btn,
 .popup-customerdetail-row input[type="submit"] {
@@ -663,9 +674,10 @@ body{
   letter-spacing: 0.05em;
   color: #fff;
   background: #3f1569;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 7px 23px;
   margin: 0;
+  border: none;
   cursor: pointer;
   transition: all 0.5s ease 0s;
   text-decoration: none;
@@ -678,7 +690,6 @@ body{
 }
 .popup-confirm-btn,
 .popup-customerdetail-row input[type="submit"]:hover {
-  background: #000;
   transition: all 0.5s ease 0s;
   text-decoration: none;
 }
@@ -690,9 +701,9 @@ body{
   border: 0.5px solid #ff9900;
   border-radius: 5px;
   width: 64px;
-  margin-right: 10px;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 .increment-count input,
 .decrement-count input {
@@ -1043,4 +1054,7 @@ body{
 }
 .increbtn{
   cursor: pointer;
+}
+.popupError{
+  color: red;
 }
