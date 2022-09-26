@@ -283,6 +283,8 @@ body{
 }
 .company-summary-item-rightpart {
   text-align: right;
+  display: flex;
+  align-items: center;
 }
 .company-summaryitem-rightbottom{
   margin-right: 10px;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./Summaryslotselection.css";
 import { Link } from "react-router-dom"
+import "./Summaryslotselection.css";
 import MyHeader from "../Header/Header";
 import DateTimePicker from "../DayTimePicker/DayTimePicker";
 import * as moment from "moment";
@@ -24,10 +24,20 @@ class Summaryslotselection extends Component {
     this.setState({ services: this.props.location.state.state.product });
   }
 
-  
-
+  // bookedTime() {
+  //   const AppointmentListURL ="/api/Appointment/";
+  //   axios.get(AppointmentListURL).then((response) => {
+  //     let resTime = response.data.filter((item) => {
+  //             const compareDate = moment(item.StartTime).format();
+  //               // return this.state.dateTime === compareDate;
+  //               return console.log('StartTime', compareDate);
+  //           })
+  //           console.log('resTime', resTime)
+  //   })
+  //   }
 
   render() {
+    // console.log('this.state.dateTime', moment(this.state.dateTime).format())
     const location = this.props.location.state.state.cartVal;
     const handleCount = (val, item, index) => {
       if (val === "inc") {
@@ -86,24 +96,23 @@ class Summaryslotselection extends Component {
                     <div className="company-summary-item-rightpart">
                       {/*start:increment decrement*/}
                       <div className="incrementdecrement-box">
-                      <div
-                          className="decrement-count decrement-count_1"
-                          onClick={() => handleCount("dec", item, index)}
-                        >
-                          <span className="increbtn">-</span>
-                        </div>
-                        
-
-                        <div className="total-count total-count-1">
-                          {item.amount}
-                        </div>
                         <div
-                          className="increment-count increment-count_1"
-                          onClick={() => handleCount("inc", item, index)}
-                        >
-                          <span className="increbtn">+</span>
-                        </div>
-                        
+                            className="decrement-count decrement-count_1"
+                            onClick={() => handleCount("dec", item, index)}
+                          >
+                            <span className="increbtn">-</span>
+                          </div>
+                          
+
+                          <div className="total-count total-count-1">
+                            {item.amount}
+                          </div>
+                          <div
+                            className="increment-count increment-count_1"
+                            onClick={() => handleCount("inc", item, index)}
+                          >
+                            <span className="increbtn">+</span>
+                          </div>
                       </div>
                       {/*end:increment decrement*/}
 

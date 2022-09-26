@@ -49,8 +49,10 @@ class LandingPage extends Component {
     });
   };
 
+
   render() {
     const testArray = [];
+    
 
     const countValue = (countVal, index) => {
       const newArray = [...this.state.products];
@@ -60,11 +62,13 @@ class LandingPage extends Component {
       this.setState({ isSelected: [...this.state.isSelected, testArray] });
     };
 
+
     return (
       <>
         <MyHeader count={this.state.cartCount} product={this.state.product}/>
         <div className="landingpage-container">
           <div className="seach-box">
+
             <div className="seach-filter">
               <button onClick={() => {
                 this.setState({ categoryId: 1})

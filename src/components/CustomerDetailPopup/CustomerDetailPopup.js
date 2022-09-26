@@ -49,7 +49,7 @@ const CustomerDetailPopup = (props) => {
       payLoad.phone != "" &&
       payLoad.isWhatsapp != ""
     ) {
-      const URL = "https://leaponapi.herokuapp.com/api/Customer/";
+      const URL = "/api/Customer/";
       axios.post(URL, payLoad).then((response) => {
         setCustomerDetail({ isLoading: false });
         if (response) {
@@ -57,9 +57,10 @@ const CustomerDetailPopup = (props) => {
             customerId: response.data.CustId,
             StartTime: props?.DateTime,
             total: props?.TotalAmount,
+            Status: 1
           };
           const AppointmentList =
-            "https://leaponapi.herokuapp.com/api/Appointment/";
+            "/api/Appointment/";
           axios.post(AppointmentList, payLoad2).then((response) => {
             setCustomerDetail({
               isLoading: false,
@@ -73,7 +74,7 @@ const CustomerDetailPopup = (props) => {
                 customerId: response.data.customerId,
               };
               const AppointmentServiceList =
-                "https://leaponapi.herokuapp.com/api/AppointmentService/";
+                "/api/AppointmentService/";
               axios.post(AppointmentServiceList, payLoad3).then((response) => {
               });
             });
