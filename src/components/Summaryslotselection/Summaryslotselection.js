@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Summaryslotselection.css";
+import { Link } from "react-router-dom"
 import MyHeader from "../Header/Header";
 import DateTimePicker from "../DayTimePicker/DayTimePicker";
 import * as moment from "moment";
@@ -22,6 +23,8 @@ class Summaryslotselection extends Component {
     globalArray.map((item) => (this.state.totalAmount += item.amount * item.price));
     this.setState({ services: this.props.location.state.state.product });
   }
+
+  
 
 
   render() {
@@ -46,6 +49,7 @@ class Summaryslotselection extends Component {
       totalAmount11 = this.state.totalAmount;
       this.setState({ totalAmount: totalAmount11 });
     };
+
     return (
       <>
         {/* Customer detail Popup Start */}
@@ -63,7 +67,7 @@ class Summaryslotselection extends Component {
         <MyHeader count={location} />
         <div className="summaryslotselection-container">
           <div className="page-header-back">
-            <a className="backbtn" href="/"><span>&#60;</span></a>
+            <Link className="backbtn" to="/"><span>&#60;</span></Link>
             Summary
           </div>
 

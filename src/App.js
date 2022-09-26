@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "./App.css";
@@ -12,9 +13,14 @@ import Customerdetail from "./components/Customerdetail/Customerdetail.js";
 import Confirmation from "./components/Confirmation/Confirmation.js";
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    axios.defaults.baseURL = 'https://leaponapi.herokuapp.com/';
+  }
   state = {
     cartCount: "",
   };
+  
   render() {
     return (
       <div className="App">

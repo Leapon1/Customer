@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./Landingpage.css";
-import searchicon from "./images/searchicon.png";
 import ServiceCard from "../ServiceCard/ServiceCard";
 import MyHeader from "../Header/Header";
-
 
 class LandingPage extends Component {
   state = {
@@ -17,11 +15,9 @@ class LandingPage extends Component {
     total: 0,
     addedProductIndex: [],
     product: [],
-    categoryId: [],
-    categoryData: [],
   };
   componentDidMount() {
-    const url = "https://leaponapi.herokuapp.com/api/Service/";
+    const url = "/api/Service/";
     axios.get(url).then((result) => {
       const products = result.data;
       this.setState({ products });
@@ -30,8 +26,7 @@ class LandingPage extends Component {
 
   getDatabyCategory(categoryId = false) {
     let catId = categoryId ? categoryId : this.state.categoryId;
-    let resultId = []
-    const url = "https://leaponapi.herokuapp.com/api/Service/";
+    const url = "/api/Service/";
     axios.get(url).then((res) => {
       let cats = res.data.filter((item) => {
         return item.category === catId
@@ -54,7 +49,6 @@ class LandingPage extends Component {
     });
   };
 
-
   render() {
     const testArray = [];
 
@@ -71,19 +65,6 @@ class LandingPage extends Component {
         <MyHeader count={this.state.cartCount} product={this.state.product}/>
         <div className="landingpage-container">
           <div className="seach-box">
-            {/* <div className="seach-form-content">
-              <form>
-                <span className="searchicon">
-                  <img src={searchicon} alt="searchicon" />
-                </span>
-                <input
-                  type="text"
-                  name="search"
-                  placeholder="Search for a service"
-                />
-              </form>
-            </div> */}
-
             <div className="seach-filter">
               <button onClick={() => {
                 this.setState({ categoryId: 1})
