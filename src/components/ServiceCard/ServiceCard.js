@@ -35,7 +35,6 @@ const ServiceCard = (props) => {
   };
 
   let prodData = [props.product]
-
   return (
     <div>
       <div className="company-service-item" key={props.product.ServiceId}>

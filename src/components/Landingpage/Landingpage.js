@@ -35,6 +35,7 @@ class LandingPage extends Component {
       this.setState({ products : cats });
     });
   }
+  
 
   calculateTotal = () => {
     let total = 0;
@@ -51,9 +52,8 @@ class LandingPage extends Component {
 
 
   render() {
-    const testArray = [];
-    
 
+    const testArray = [];
     const countValue = (countVal, index) => {
       const newArray = [...this.state.products];
       newArray[index].amount = countVal;
@@ -61,7 +61,6 @@ class LandingPage extends Component {
       testArray.push(index);
       this.setState({ isSelected: [...this.state.isSelected, testArray] });
     };
-
 
     return (
       <>
@@ -131,7 +130,6 @@ class LandingPage extends Component {
               <button
                 className="select-date-btn"
                 onClick={() =>{
-                  
                   this.props.history.push("/summaryslotselection", {
                     state: {
                       cartVal: this.state.product.length,

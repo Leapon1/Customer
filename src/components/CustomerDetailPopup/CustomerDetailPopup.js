@@ -85,6 +85,7 @@ const CustomerDetailPopup = (props) => {
                 state: {
                   dateTime: props.DateTime,
                   customerName: customerDetail.name,
+                  details : customerDetail
                 },
               });
               swal({

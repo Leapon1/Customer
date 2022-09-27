@@ -5,7 +5,9 @@ import MyHeader from "../Header/Header";
 import DateTimePicker from "../DayTimePicker/DayTimePicker";
 import * as moment from "moment";
 import CustomerDetailPopup from "../CustomerDetailPopup/CustomerDetailPopup";
+import axios from "axios";
 
+let isBooked = false
 let globalArray = [];
 let totalAmount11 = 0;
 class Summaryslotselection extends Component {
@@ -13,6 +15,7 @@ class Summaryslotselection extends Component {
     services: [],
     totalAmount: 0,
     dateTime: "",
+    dateTimeFormat: "",
     toggle: false,
     appointmentData: "",
     customerId: "",
@@ -24,20 +27,20 @@ class Summaryslotselection extends Component {
     this.setState({ services: this.props.location.state.state.product });
   }
 
-  // bookedTime() {
-  //   const AppointmentListURL ="/api/Appointment/";
-  //   axios.get(AppointmentListURL).then((response) => {
-  //     let resTime = response.data.filter((item) => {
-  //             const compareDate = moment(item.StartTime).format();
-  //               // return this.state.dateTime === compareDate;
-  //               return console.log('StartTime', compareDate);
-  //           })
-  //           console.log('resTime', resTime)
-  //   })
-  //   }
+  bookedTime() {
+    const AppointmentListURL ="/api/Appointment/";
+    axios.get(AppointmentListURL).then((response) => {
+      let resTime = response.data.filter((item) => {
+            const compareDate = moment(item.StartTime).format();
+            return compareDate === this.state.dateTimeFormat
+          })
+        resTime.length === 0 ? isBooked = false : isBooked = true
+        console.log('isBooked', isBooked)
+    })
+    }
 
   render() {
-    // console.log('this.state.dateTime', moment(this.state.dateTime).format())
+
     const location = this.props.location.state.state.cartVal;
     const handleCount = (val, item, index) => {
       if (val === "inc") {
@@ -147,12 +150,17 @@ class Summaryslotselection extends Component {
           </div>
           <div className="company-calendar-section">
             <DateTimePicker
-              dateTime={(value) => this.setState({ dateTime: value })}
+              dateTime={(value) => (
+                this.setState({ dateTime: value , dateTimeFormat: moment(value).format()}),
+                this.bookedTime()
+              ) }
+              
             />
           </div>
           {
             this.state.dateTime ? 
             <div className={"bottom-fixed-container "+(this.state.toggle ? "bkhide" : "")}>
+              
             <div className="calender-con">
               <div className="company-calendar-resultoutput">
                 {moment(this.state.dateTime).format("MMMM DD") != "Invalid date"
@@ -164,16 +172,20 @@ class Summaryslotselection extends Component {
                   : "Time"}
               </div>
             </div>
-            <div className="bookappointment-con">
-              <div className="bookappointment-link">
-                  <div
-                    className="bookappointment-btn "
-                    onClick={() => this.setState({ toggle: true })}
-                  >
-                    Book Appointment
-                  </div>
-              </div>
-            </div>
+            { 
+                isBooked === false ? <div className="bookappointment-con">
+                <div className="bookappointment-link">
+                    <div
+                      className="bookappointment-btn "
+                      onClick={() => this.setState({ toggle: true })}
+                    >
+                      Book Appointment
+                    </div>
+                </div>
+              </div> : <p>Already booked at this time</p>
+              
+            }
+            
           </div> : <div></div>
           }
           

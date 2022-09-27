@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import * as moment from "moment";
-
-import { Link } from "react-router-dom";
+import emailjs from '@emailjs/browser';
 
 import "./Confirmation.css";
 
-// import searchicon from "./images/searchicon.png";
 import countnumbercheck from "./images/countnumbercheck.png";
 
 class Confirmation extends Component {
+  
   state = {
     dateTime: "",
   };
@@ -17,7 +16,22 @@ class Confirmation extends Component {
     this.setState({
       dateTime: this.props.history.location.state.state.dateTime,
     });
+    this.sendEmail();
   }
+
+  sendEmail(){
+    emailjs.send("service_cucqh2t","template_wwkrci5", { 
+      to_name : this.props.history.location.state.state.details.name,
+      message : "This is a test message",
+      to_email : this.props.history.location.state.state.details.email
+    }, 'OedIKc_lW-iVNDrKW')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+  
 
   render() {
     return (
