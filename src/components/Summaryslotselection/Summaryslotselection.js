@@ -7,19 +7,23 @@ import * as moment from "moment";
 import CustomerDetailPopup from "../CustomerDetailPopup/CustomerDetailPopup";
 import axios from "axios";
 
-let isBooked = false
 let globalArray = [];
 let totalAmount11 = 0;
 class Summaryslotselection extends Component {
-  state = {
-    services: [],
-    totalAmount: 0,
-    dateTime: "",
-    dateTimeFormat: "",
-    toggle: false,
-    appointmentData: "",
-    customerId: "",
-  };
+
+  constructor(props){
+    super(props)
+    this.state = {
+      isBooked : true,
+      services: [],
+      totalAmount: 0,
+      dateTime: "",
+      dateTimeFormat: "",
+      toggle: false,
+      appointmentData: "",
+      customerId: "",
+    }
+  }
 
   componentDidMount() {
     globalArray = [...this.props.location.state.state.product];
@@ -34,8 +38,9 @@ class Summaryslotselection extends Component {
             const compareDate = moment(item.StartTime).format();
             return compareDate === this.state.dateTimeFormat
           })
-        resTime.length === 0 ? isBooked = false : isBooked = true
-        console.log('isBooked', isBooked)
+        this.setState({
+          isBooked: resTime.length != 0
+        })
     })
     }
 
@@ -80,7 +85,7 @@ class Summaryslotselection extends Component {
         <MyHeader count={location} />
         <div className="summaryslotselection-container">
           <div className="page-header-back">
-            <Link className="backbtn" to="/"><span>&#60;</span></Link>
+            <a className="backbtn" href="/"><span>&#60;</span></a>
             Summary
           </div>
 
@@ -153,7 +158,7 @@ class Summaryslotselection extends Component {
               dateTime={(value) => (
                 this.setState({ dateTime: value , dateTimeFormat: moment(value).format()}),
                 this.bookedTime()
-              ) }
+              )}
               
             />
           </div>
@@ -173,16 +178,20 @@ class Summaryslotselection extends Component {
               </div>
             </div>
             { 
-                isBooked === false ? <div className="bookappointment-con">
-                <div className="bookappointment-link">
-                    <div
-                      className="bookappointment-btn "
-                      onClick={() => this.setState({ toggle: true })}
-                    >
-                      Book Appointment
+                !this.state.isBooked ? (
+                  <div className="bookappointment-con">
+                    <div className="bookappointment-link">
+                        <div
+                          className="bookappointment-btn "
+                          onClick={() => this.setState({ toggle: true })}
+                        >
+                          Book Appointment
+                        </div>
                     </div>
-                </div>
-              </div> : <p>Already booked at this time</p>
+                  </div>
+                ) : (
+                  <p className="already-booked">Already booked at this time</p>
+                )
               
             }
             

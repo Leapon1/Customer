@@ -55,3 +55,6 @@
 .hvtuvo:hover {
   color: #ffa31a !important;
 }
+.already-booked{
+  color: red;
+}
